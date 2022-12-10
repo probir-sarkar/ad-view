@@ -1,0 +1,65 @@
+.App {
+  width: 80%;
+  margin: auto;
+  margin-top: 5rem;
+  .search {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+    border: 2px solid red;
+    .search-input {
+      width: 100%;
+      padding: 1rem;
+      border: transparent;
+      border-radius: 5px;
+      outline: none;
+      font-size: large;
+    }
+    .search-button {
+      padding: 1rem;
+      right: 0;
+      outline: none;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+      &:hover {
+        color: red;
+        transform: scale(1.2);
+      }
+    }
+  }
+  .ads {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 2rem;
+    .ad {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      .ad-image {
+        width: 100%;
+      }
+      .ad-cta {
+        // button
+        padding: 1rem;
+        border: 1px solid red;
+        border-radius: 5px;
+        background-color: transparent;
+        color: red;
+        font-size: large;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        margin-top: 2rem;
+        &:hover {
+          background-color: red;
+          color: white;
+        }
+      }
+    }
+  }
+  .message {
+    text-align: center;
+    font-size: 2rem;
+    color: red;
+  }
+}
